@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardElevation="5dp"-->
+<!--        app:cardCornerRadius="5dp"-->
+<!--        android:layout_margin="5dp">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_corner"
+            android:padding="@dimen/_9sdp"
+            android:elevation="2dp"
+            android:layout_margin="@dimen/_5sdp">
+            <View
+                android:id="@+id/viewStart"
+                android:layout_width="3dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="@id/ivCategoryIcon"
+                app:layout_constraintBottom_toBottomOf="@id/ivCategoryIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@color/red"/>
+            <ImageView
+                android:id="@+id/ivCategoryIcon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/viewStart"
+                android:src="@drawable/education"/>
+
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivCategoryIcon"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textAllCaps="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintEnd_toStartOf="@id/tvAmount"
+                app:layout_constraintBottom_toTopOf="@id/tvTransactionCount"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:fontFamily="@font/black"
+                tools:text="School Fees"/>
+
+            <TextView
+                android:id="@+id/tvTransactionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/ivCategoryIcon"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/_11ssp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintTop_toBottomOf="@id/tvCategoryName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="@font/regular"
+                tools:text="2 Transaction"
+                />
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="@font/heavy"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/gray_text"
+                tools:text="₹600"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </com.google.android.material.card.MaterialCardView>-->
+</layout>

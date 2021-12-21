@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/ivAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/gray_boarder"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="1dp"
+            app:layout_constraintBottom_toTopOf="@id/tvTransactionDetails"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/tvTransactionDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/regular"
+            app:layout_constraintBottom_toTopOf="@id/btnOkay"
+            app:layout_constraintTop_toBottomOf="@id/ivAttachment"
+            android:background="@drawable/gray_boarder"
+            android:layout_margin="@dimen/_10sdp"/>
+        <Button
+            android:id="@+id/btnOkay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvTransactionDetails"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/_10sdp"
+            android:text="Okay"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

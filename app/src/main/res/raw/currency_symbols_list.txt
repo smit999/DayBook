@@ -1,0 +1,104 @@
+[
+{
+"sort_name":"AED",
+"name":"Emirati Dirham",
+"flag":"flag_aed",
+"symbol":"د.إ"
+},
+{
+"sort_name":"AUD",
+"name":"Australian Dollar",
+"flag":"flag_aud",
+"symbol":"$"
+},
+{
+"sort_name":"CAD",
+"name":"Canada Dollar",
+"flag":"flag_cad",
+"symbol":"$"
+},
+{
+"sort_name":"CNY",
+"name":"China Yuan Renminbi",
+"flag":"flag_cny",
+"symbol":"¥"
+},
+{
+"sort_name":"EGP",
+"name":"Egypt Pound",
+"flag":"flag_egp",
+"symbol":"£"
+},
+{
+"sort_name":"EUR",
+"name":"Euro",
+"flag":"flag_eur",
+"symbol":"€"
+},
+{
+"sort_name":"GBP",
+"name":"British Pound",
+"flag":"flag_gbp",
+"symbol":"£"
+},
+{
+"sort_name":"INR",
+"name":"Indian Rupee",
+"flag":"flag_inr",
+"symbol":"₹"
+},
+{
+"sort_name":"JPY",
+"name":"Japanese Yen",
+"flag":"flag_jpy",
+"symbol":"¥"
+},
+{
+"sort_name":"KRW",
+"name":"Korea (South) Won",
+"flag":"flag_krw",
+"symbol":"₩"
+},
+{
+"sort_name":"MXN",
+"name":"Mexico Peso",
+"flag":"flag_mxn",
+"symbol":"$"
+},
+{
+"sort_name":"NZD",
+"name":"New Zealand Dollar",
+"flag":"flag_nzd",
+"symbol":"$"
+},
+{
+"sort_name":"QAR",
+"name":"Qatar Riyal",
+"flag":"flag_qar",
+"symbol":"﷼"
+},
+{
+"sort_name":"RUB",
+"name":"Russia Ruble",
+"flag":"flag_rub",
+"symbol":"₽"
+},
+{
+"sort_name":"SGD",
+"name":"Singapore Dollar",
+"flag":"flag_sgd",
+"symbol":"$"
+},
+{
+"sort_name":"USD",
+"name":"United States Dollar",
+"flag":"flag_usd",
+"symbol":"$"
+},
+{
+"sort_name":"VND",
+"name":"Viet Nam Dong",
+"flag":"flag_vnd",
+"symbol":"₫"
+}
+]
